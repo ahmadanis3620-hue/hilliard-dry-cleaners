@@ -26,3 +26,10 @@ business itself:
   profile
 - Their previously listed domains (hilliarddrycleaner.com and
   hilliarddrycleaners.com) are both dead — no DNS
+- **Reviews** are quoted from the shop's public Yelp listing (as mirrored on
+  Yahoo Local). They are real 5-star reviews, but the quotes may be
+  truncated versions of the full text — compare against Yelp before the
+  owner shares the site widely
+- **shop.jpg** is a photo of the pressing room taken from the Google Maps
+  listing (uploaded there by a Maps user). Ask the owner for their own
+  photos and replace it

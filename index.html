@@ -301,6 +301,76 @@
         color: #b9c4d6;
       }
 
+      /* ── Shop photo ─────────────────────────── */
+      .shop-figure {
+        margin: 2.5rem 0 0;
+      }
+
+      .shop-figure img {
+        display: block;
+        width: 100%;
+        max-width: 640px;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .shop-figure figcaption {
+        font-size: 0.85rem;
+        color: #93a2b8;
+        margin-top: 0.6rem;
+      }
+
+      /* ── Reviews ────────────────────────────── */
+      .reviews {
+        background: var(--surface);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+      }
+
+      .review {
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1.3rem 1.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .review .stars {
+        color: var(--camel);
+        letter-spacing: 0.18em;
+        font-size: 0.95rem;
+      }
+
+      .review blockquote {
+        margin: 0;
+        font-size: 0.97rem;
+        flex: 1;
+      }
+
+      .review footer {
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+
+      .review footer strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .reviews-note {
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin: 1.2rem 0 0;
+      }
+
       /* ── Hours & location ───────────────────── */
       .info-grid {
         display: grid;
@@ -498,6 +568,66 @@
               </p>
             </div>
           </div>
+          <figure class="shop-figure">
+            <img
+              src="shop.jpg"
+              alt="The pressing room inside Hilliard Dry Cleaners, with pressing equipment and hangers"
+              width="1024"
+              height="768"
+              loading="lazy"
+            />
+            <figcaption>Inside the shop: the pressing room on Main Street.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ── Reviews ──────────────────────────── -->
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">From our customers</span>
+            <h2>Neighbors on their neighborhood cleaner</h2>
+          </div>
+          <div class="reviews-grid">
+            <article class="review">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                "Clothes always look great when returned. I received a text when they
+                are ready, usually in 2 to 3 days. The clerks are very friendly and
+                helpful."
+              </blockquote>
+              <footer><strong>Craig K.</strong> · Yelp review, 2024</footer>
+            </article>
+            <article class="review">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                "We have been using Hilliard dry cleaners for a few months now, and we
+                are very happy with the pricing and quality of our dry cleaning."
+              </blockquote>
+              <footer><strong>Sandy B.</strong> · Yelp review, 2024</footer>
+            </article>
+            <article class="review">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                "I have used this cleaners for 10+ years and even after ownership
+                change they have been pleasant and responsive and have done a good
+                job. Never an issue."
+              </blockquote>
+              <footer><strong>David C.</strong> · Yelp review, 2023</footer>
+            </article>
+            <article class="review">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                "This dry cleaners is great. The employees and owner are friendly and
+                responsive. They always have my items ready in 2-3 days."
+              </blockquote>
+              <footer><strong>Kazel C.</strong> · Yelp review, 2023</footer>
+            </article>
+          </div>
+          <p class="reviews-note">
+            Reviews quoted from the shop's public
+            <a href="https://www.yelp.com/biz/hilliard-dry-cleaners-hilliard" rel="noopener">Yelp listing</a>.
+          </p>
         </div>
       </section>
 
